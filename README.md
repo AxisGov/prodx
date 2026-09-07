@@ -232,6 +232,8 @@ Cole o chamado e deixe a skill triar:
 | P4 | Avaliação | `03-avaliacao.md` | quando não for EXISTE |
 | P5 | Veredito e briefing | `VEREDITO.md`, `BRIEFING.md` | avaliação completa |
 
+No P2, quando a classificação pode terminar em `fazer`, a skill pergunta **densidade** (`mvp` \| `padrao` \| `completo` \| `profundo`) e **forma de construção** (`entrevista` \| `autonomo`). É intenção de produto, não decisão técnica: viaja no `01-pedido.md` e no `BRIEFING.md` como sugestão, e quem confirma — já com contexto de código — é o sprintx, na abertura do planejamento.
+
 ---
 
 ## O PRODUTO.md
@@ -254,7 +256,7 @@ Nada de invenção: o que não for verificável vira `NAO DETERMINADO` e entra e
 | Skill | Relação |
 |-------|---------|
 | **runx** | O caminho mais comum, porque hoje o pedido chega pelo suporte. O briefing vira o `00-OCORRENCIA.md`, com o tipo classificado e o comportamento intencional já verificado. Pedido aprovado na triagem entrega um briefing de uma linha. |
-| **sprintx** | Recebe o briefing como entrada da F1. O plano referencia o `PD-ID` de origem. |
+| **sprintx** | Recebe o briefing como entrada da F1. O plano referencia o `PD-ID` de origem. Densidade e forma de construção sugeridas no P2 viajam no briefing; o sprintx as confirma ou ajusta na F2. |
 | **memox** | Indexa o índice e os vereditos. É ele que faz a verificação de existência melhorar com o tempo. |
 | **legadox** | Quando existir `PERFIL.md`, as zonas de risco viram o gatilho G6. |
 
