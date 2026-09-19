@@ -7,6 +7,8 @@ desfecho: <existe | existe_parcial | nao_existe>
 confianca: <alta | reduzida>
 tem_memox: <true | false>
 tem_relatorios_runx: <true | false>
+tem_modulex: <true | false>
+modulo_encontrado: <id | ->
 ---
 
 # <PD-ID> — Verificação de existência
@@ -28,9 +30,17 @@ sinônimos que a casa usa, em português e em inglês.>
 | 3 | Telas, rotas e relatórios do sistema | <achado ou "nada encontrado"> |
 | 4 | Relatórios de uso do runx | <achado, ou "sem relatórios"> |
 | 5 | Pedidos já avaliados no INDICE.md | <PD-ID e veredito, ou "nada encontrado"> |
+| 6 | Catálogo do modulex | <id, fatias N, esforço faixa — **NÃO é evidência de existência**; ou "modulex não instalado"> |
 
 <Registrar onde se procurou e NÃO se achou é o que impede a próxima
 pessoa de repetir a busca.>
+
+<A linha 6 responde outra pergunta: não "o sistema já faz", mas "alguém
+já resolveu isso antes, em outro projeto". Ela NÃO determina o desfecho
+— os cinco primeiros lugares determinam. Módulo pronto tratado como
+existência devolve `ja_existe` para funcionalidade que ninguém
+instalou, e o cliente recebe um texto explicando onde encontrar uma
+tela que não está lá. O que o módulo muda é o P4, não este estágio.>
 
 ## 3. Desfecho
 

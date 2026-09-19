@@ -53,6 +53,18 @@ O mesmo pedido pode ter sido avaliado antes. Busque por `nao_fazer` e por `ja_ex
 - Se foi recusado: **o motivo continua valendo?** O motivo é datado. "Não fazemos porque só um cliente usa" envelhece quando três clientes passam a pedir.
 - Se foi `ja_existe`: você acabou de achar a resposta, e ela já tem texto de cliente escrito.
 
+### 6. O catálogo do modulex
+
+**Este lugar responde uma pergunta diferente dos cinco anteriores.** Os cinco respondem "o sistema já faz isso?". Este responde "alguém já resolveu isso antes, em outro projeto?".
+
+**Módulo pronto NÃO é evidência de existência.** Se o P3 tratasse o achado como existência, devolveria `ja_existe` para uma funcionalidade que ninguém instalou — e o cliente receberia um texto explicando onde encontrar uma tela que não está lá. É o pior defeito que este estágio pode produzir, porque chega ao cliente.
+
+O que o módulo prova é outra coisa: **fazer é mais barato do que parece.** Isso não muda o desfecho do P3; muda o P4.
+
+Consulte por `/modulex-buscar`, com o problema em linguagem natural — nunca pelo nome do fornecedor. Registre o achado **à parte**, e siga determinando o desfecho pelos cinco lugares originais.
+
+A ausência do `modulex`, ou o catálogo não alcançável, nunca bloqueia: registre que não foi consultado e siga.
+
 ## O que conta como evidência
 
 Regra 5: "acho que já tem" não é resposta. Toda afirmação vem com **uma dessas**:
@@ -113,7 +125,9 @@ Regra prática: se o esforço para completar é **menor que o esforço do pedido
 `assets/TEMPLATE-existencia.md`, frontmatter `kind: existencia`. Seções:
 
 1. O que foi procurado — os termos e sinônimos usados
-2. Onde foi procurado — os cinco lugares, cada um com achado ou "nada encontrado"
+2. Onde foi procurado — os cinco lugares, cada um com achado ou "nada encontrado"; e, à parte, a sexta linha do catálogo:
+
+   | 6 | Catalogo do modulex | <id>, fatias <n>, esforco <faixa> — NAO e evidencia de existencia |
 3. Desfecho: `existe` | `existe_parcial` | `nao_existe`
 4. Evidência principal, no formato da tabela acima
 5. Se PARCIAL: o que falta exatamente, e o tamanho relativo ao pedido
@@ -123,6 +137,7 @@ Regra prática: se o esforço para completar é **menor que o esforço do pedido
 ## Critério de saída
 
 - Os cinco lugares foram consultados **ou** está registrado por que um deles não existe (sem memox, sem legadox — nunca bloqueia).
+- O catálogo do modulex foi consultado, ou está registrado que não há catálogo alcançável. O achado, havendo, está **fora** da determinação do desfecho.
 - O desfecho está declarado.
 - Há pelo menos uma evidência no formato exigido, ou o registro explícito de onde se procurou sem achar.
 - Se PARCIAL: o que falta está descrito em termos de trabalho, não de desejo.

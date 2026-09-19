@@ -97,6 +97,19 @@ Escreva o escopo mínimo em uma frase que caiba num briefing, e diga **o que ele
 
 Se o escopo mínimo for igual ao pedido, isso é uma afirmação forte: justifique por que não dá para cortar. É o único caso em que "não há versão menor" é aceitável, e ele precisa de argumento.
 
+#### Fatias do módulo, quando o P3 tiver achado uma
+
+"WhatsApp completo" e "só receber e responder mensagem" são escopos mínimos de tamanhos muito diferentes, e a distinção é **decisão de produto** — que é exatamente o que este estágio decide.
+
+Quando o P3 registrou módulo no catálogo, use as **fatias** dele para dimensionar: o núcleo obrigatório costuma resolver o pedido, e as extensões opcionais costumam responder a coisas que o cliente não pediu. É um corte de generalidade com um mapa pronto.
+
+Duas travas:
+
+- **A faixa de esforço é referência histórica, não estimativa.** Entra como ordem de grandeza — "isso é dia ou é mês" — e **nunca como número no veredito**. Estimar continua sendo a F3.5 do sprintx, sobre o plano real deste projeto.
+- **O escopo mínimo não nomeia tecnologia.** Escreva "receber e responder mensagem de WhatsApp num inbox compartilhado", nunca "instalar o módulo tal". A regra 10 continua valendo integralmente.
+
+Faixa `NAO DETERMINADO`: use as fatias e **ignore o esforço**. Fatia sem esforço ainda dimensiona escopo; esforço inventado envenena o veredito — e o veredito é assinado.
+
 ---
 
 ### 7. Recorrência

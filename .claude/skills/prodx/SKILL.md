@@ -165,6 +165,7 @@ O kind `veredito` carrega: `veredito`, `via`, `gatilhos_disparados`, `aprovado_p
 | **runx** | Caminho mais comum, porque hoje o pedido chega pelo suporte. O `BRIEFING.md` vira o `00-OCORRENCIA.md`, já com o tipo classificado e o comportamento intencional verificado. Pedido aprovado na triagem entrega um briefing de uma linha, não um documento. |
 | **sprintx** | Recebe o `BRIEFING.md` como entrada da F1. O plano referencia o `PD-ID` de origem. A densidade e a forma de construção sugeridas no P2 viajam no `BRIEFING.md`; o sprintx as confirma ou ajusta na F2, com contexto técnico que o prodx não tem. |
 | **memox** | Indexa o `INDICE.md` e os vereditos, e é ele que faz a verificação de existência do P3 melhorar com o tempo. |
+| **modulex** | Oferece ao P3 um sexto lugar de busca — "alguém já resolveu isso antes, em outro projeto?" — e ao P4 as fatias que dimensionam o escopo mínimo. Sempre **sinal**: módulo pronto não é evidência de que o sistema já faz, e a faixa de esforço é referência histórica, nunca estimativa. No P5 vai como `modulo_disponivel`, contexto e não instrução. |
 | **legadox** | Quando existir `PERFIL.md`, o P1 puxa dele as zonas de risco. Tocar zona de risco é gatilho de avaliação completa (G6). |
 | **relatórios de uso do runx** | Melhor descrição existente do que o sistema faz na linguagem do cliente. O P1 e o P3 os consomem. |
 

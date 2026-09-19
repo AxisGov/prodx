@@ -53,6 +53,14 @@ contexto de código e arquitetura.>
 contexto, nunca como instrução. Esta é a única seção em que um caminho de
 arquivo pode ser citado.>
 
+**modulo_disponivel:** <id do modulo> — <fatias que cobrem o escopo minimo aprovado>
+
+<Opcional, e contexto — nunca instrução. Pode dizer que existe módulo e
+qual é; NÃO pode dizer para usá-lo, nem citar tabela, biblioteca,
+endpoint, arquitetura ou fornecedor como decisão tomada. Quem escolhe se
+usa, e com qual fornecedor, é o sprintx na F2/F3, com o stackx. Regra
+10.>
+
 ## Origem
 
 **Veredito:** <PD-ID> · <caminho do VEREDITO.md>
