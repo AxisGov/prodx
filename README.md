@@ -9,7 +9,7 @@
 <p>
   <img alt="harness: Claude Code" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-claude.svg">
   <img alt="harness: OpenCode" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-opencode.svg">
-  <img alt="vereditos: 4, tres encerram" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-vereditos.svg">
+  <img alt="vereditos: 4, dois seguem" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-vereditos.svg">
   <img alt="assinatura: humana" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-assinatura.svg">
   <img alt="schema expx v1" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-schema.svg">
   <img alt="docs pt-BR" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-lang.svg">
@@ -77,7 +77,7 @@ O prodx é o portão que falta.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo.svg">
-  <img alt="Fluxo do prodx: o chamado entra pela esquerda e passa pela triagem. Sem gatilho disparado, segue pelo caminho curto direto ao veredito. Com gatilho, entra na avaliacao completa, que percorre entendimento do pedido, verificacao de existencia e avaliacao. Ambos os caminhos chegam aos quatro vereditos: ja existe, nao fazer e fazer outra coisa encerram o pedido; fazer segue adiante. Todo veredito passa pelo portao da assinatura humana, e so depois dele o briefing sai para o runx e para o sprintx." src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo.svg" width="100%">
+  <img alt="Fluxo do prodx: o chamado entra pela esquerda e passa pela triagem. Sem gatilho disparado, segue pelo caminho curto direto ao veredito. Com gatilho, entra na avaliacao completa, que percorre entendimento do pedido, verificacao de existencia e avaliacao. Ambos os caminhos chegam aos quatro vereditos: ja existe e nao fazer encerram sem trabalho; fazer outra coisa e fazer geram briefing. Todo veredito passa pelo portao da assinatura humana, e so depois dele o briefing sai para o runx e para o sprintx." src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo.svg" width="100%">
 </picture>
 
 ## A realidade: o pedido vai do suporte direto ao dev
@@ -115,16 +115,16 @@ A regra de proporcionalidade vale nos dois sentidos: **proibido** rodar avaliaç
 
 A triagem é a diferença entre uma ferramenta que o dev usa e uma que ele contorna.
 
-## Os quatro vereditos — três deles encerram o pedido
+## Os quatro vereditos — dois encerram sem gerar trabalho
 
 | Veredito | O que acontece |
 |----------|----------------|
 | **`ja_existe`** | O sistema já faz. Sai um texto para o cliente explicando onde e como, na linguagem dele. **Encerra.** |
 | **`nao_fazer`** | Com o motivo registrado, datado e falseável. Quando o pedido voltar, a avaliação já está feita. **Encerra.** |
-| **`fazer_outra_coisa`** | O problema real reformulado, quase sempre menor e diferente do pedido. **Encerra o pedido original.** |
-| `fazer` | E aí, e só aí, sai o briefing. |
+| **`fazer_outra_coisa`** | O problema real reformulado, quase sempre menor e diferente do pedido. **Encerra o pedido original e gera briefing para o problema reformulado.** |
+| `fazer` | Gera briefing para o escopo mínimo aprovado. |
 
-Três dos quatro caminhos terminam sem gerar uma linha de código. Essa é a razão de o prodx existir.
+Dois caminhos encerram sem trabalho; os outros dois geram briefing. Essa distinção mantém o indicador e a documentação coerentes com o fluxo real.
 
 O caso mais comum é o `ja_existe`: cliente pede "relatório de vendas por região" e o sistema tem isso há três anos numa tela que ninguém achou. A verificação de existência é a etapa mais valiosa e a mais ignorada.
 
@@ -291,7 +291,7 @@ docs/produto/
       02-existencia.md
       03-avaliacao.md
       VEREDITO.md
-      BRIEFING.md          so quando o veredito for fazer
+      BRIEFING.md          quando o veredito for fazer ou fazer_outra_coisa
 ```
 
 Pedido que passa na triagem não gera pasta. Pedido recusado **nunca é apagado**: a avaliação é ativo permanente e vale para a próxima vez.
