@@ -141,7 +141,7 @@ Via avaliacao completa: 11 (23%)
 Nao viraram trabalho: 19 (40%)
 ```
 
-A última linha é o critério honesto de utilidade da skill. A segunda é o indicador de atrito: acima de 50% na avaliação completa, os gatilhos estão largos demais.
+A última linha é o critério honesto de utilidade da skill. A terceira é o indicador de atrito: acima de 50% na avaliação completa, os gatilhos estão largos demais.
 
 ---
 
