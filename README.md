@@ -1,29 +1,29 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/banner-light.svg">
-  <img alt="prodx — a camada de produto do metodo Expx" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/banner-light.svg">
+  <img alt="prodx — a camada de produto do metodo Expx" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/banner-light.svg" width="100%">
 </picture>
 
 <p>
-  <img alt="harness: Claude Code" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-claude.svg">
-  <img alt="harness: OpenCode" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-opencode.svg">
-  <img alt="vereditos: 4, dois seguem" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-vereditos.svg">
-  <img alt="assinatura: humana" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-assinatura.svg">
-  <img alt="schema expx v1" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-schema.svg">
-  <img alt="docs pt-BR" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-lang.svg">
-  <img alt="licenca MIT" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-license.svg">
+  <img alt="harness: Claude Code" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-claude.svg">
+  <img alt="harness: OpenCode" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-opencode.svg">
+  <img alt="vereditos: 4, dois seguem" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-vereditos.svg">
+  <img alt="assinatura: humana" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-assinatura.svg">
+  <img alt="schema expx v1" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-schema.svg">
+  <img alt="docs pt-BR" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-lang.svg">
+  <img alt="licenca MIT" src="https://raw.githubusercontent.com/AxisGov/prodx/main/.github/assets/badge-license.svg">
 </p>
 
 <p>
-  <a href="https://bittencourtthulio.github.io/expxdev/#prodx"><strong>📘 Documentação do método</strong></a>
+  <a href="https://axisgov.github.io/expxdev/#prodx"><strong>📘 Documentação do método</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://bittencourtthulio.github.io/expxdev/#prodx">Gatilhos e vereditos</a>
+  <a href="https://axisgov.github.io/expxdev/#prodx">Gatilhos e vereditos</a>
   &nbsp;·&nbsp;
-  <a href="https://bittencourtthulio.github.io/expxdev/#ecossistema">O ecossistema</a>
+  <a href="https://axisgov.github.io/expxdev/#ecossistema">O ecossistema</a>
   &nbsp;·&nbsp;
-  <a href="https://bittencourtthulio.github.io/expxdev/#schema">Contratos</a>
+  <a href="https://axisgov.github.io/expxdev/#schema">Contratos</a>
 </p>
 
 <strong>A camada de produto do método Expx</strong> — decide se o pedido<br>
@@ -40,25 +40,25 @@ vira trabalho, para <a href="https://claude.com/claude-code">Claude Code</a> e <
 
 ## O ecossistema Expx
 
-O método Expx é um conjunto de skills que se compõem, instaladas e mantidas pelo CLI [`expxdev`](https://github.com/bittencourtthulio/expxdev).
+O método Expx é um conjunto de skills que se compõem, instaladas e mantidas pelo CLI [`expxdev`](https://github.com/AxisGov/expxdev).
 
 | Peça | Papel | Relação com a `prodx` |
 |---|---|---|
-| **[expxdev](https://github.com/bittencourtthulio/expxdev)** | o CLI: instala, atualiza e diagnostica o ecossistema, e sobe o painel de operação | é quem instala esta skill (`npx expxdev init`) |
-| **[buildx](https://github.com/bittencourtthulio/buildx)** | orquestra um projeto inteiro, da descrição ao sistema pronto | invoca a `prodx` duas vezes: no B1 em modo greenfield (P0 e P3 pulados, veredito auto-assinado com `provisorio:true`) e no B6 como auditor do construído; é dependência obrigatória dele |
-| **[sprintx](https://github.com/bittencourtthulio/sprintx)** | **Build** — feature nova, F1…F6 | recebe o `BRIEFING.md` assinado como entrada da F1; o plano referencia o `PD-ID` de origem |
-| **[runx](https://github.com/bittencourtthulio/runx)** | **Run** — ocorrência em produção, E1…E5 | caminho mais comum: o `BRIEFING.md` vira o `00-OCORRENCIA.md`, já com o tipo classificado |
-| **[legadox](https://github.com/bittencourtthulio/legadox)** | **camada** de segurança para código legado | as zonas de risco do `PERFIL.md` viram o gatilho G6 da triagem |
-| **[stackx](https://github.com/bittencourtthulio/stackx)** | **camada** de convenções do repositório | fonte independente: convenção técnica não entra em veredito de produto |
-| **[mergex](https://github.com/bittencourtthulio/mergex)** | entrega: branch, commit por task, PR e pacote de QA | a jusante: o `PD-ID` acompanha o trabalho até a descrição do PR |
-| **[memox](https://github.com/bittencourtthulio/MemoX)** | **camada** de memória do projeto | indexa o `INDICE.md` e os vereditos; é ele que faz a verificação de existência melhorar com o tempo |
+| **[expxdev](https://github.com/AxisGov/expxdev)** | o CLI: instala, atualiza e diagnostica o ecossistema, e sobe o painel de operação | é quem instala esta skill (`expx init`) |
+| **[buildx](https://github.com/AxisGov/buildx)** | orquestra um projeto inteiro, da descrição ao sistema pronto | invoca a `prodx` duas vezes: no B1 em modo greenfield (P0 e P3 pulados, veredito auto-assinado com `provisorio:true`) e no B6 como auditor do construído; é dependência obrigatória dele |
+| **[sprintx](https://github.com/AxisGov/sprintx)** | **Build** — feature nova, F1…F6 | recebe o `BRIEFING.md` assinado como entrada da F1; o plano referencia o `PD-ID` de origem |
+| **[runx](https://github.com/AxisGov/runx)** | **Run** — ocorrência em produção, E1…E5 | caminho mais comum: o `BRIEFING.md` vira o `00-OCORRENCIA.md`, já com o tipo classificado |
+| **[legadox](https://github.com/AxisGov/legadox)** | **camada** de segurança para código legado | as zonas de risco do `PERFIL.md` viram o gatilho G6 da triagem |
+| **[stackx](https://github.com/AxisGov/stackx)** | **camada** de convenções do repositório | fonte independente: convenção técnica não entra em veredito de produto |
+| **[mergex](https://github.com/AxisGov/mergex)** | entrega: branch, commit por task, PR e pacote de QA | a jusante: o `PD-ID` acompanha o trabalho até a descrição do PR |
+| **[memox](https://github.com/AxisGov/MemoX)** | **camada** de memória do projeto | indexa o `INDICE.md` e os vereditos; é ele que faz a verificação de existência melhorar com o tempo |
 | **prodx** *(este repositório)* | **camada** de produto: decide **se** há trabalho | — |
 
 **Camadas** (`prodx`, `memox`, `stackx`, `legadox`) sozinhas não fazem nada — elas modificam o comportamento da `sprintx` e da `runx`. Sem `docs/produto/` construído, nada muda: as irmãs se comportam como se comportariam sem esta skill.
 
 A `prodx` é a única que roda **antes** de todas as outras: ela decide *se* existe trabalho; as demais tratam de *como* fazê-lo. A `buildx` é o caminho inverso: é a única peça que **depende** de outras — sem `prodx`, `sprintx` e `mergex` instaladas, ela não roda.
 
-Detalhes do ecossistema inteiro no [README do expxdev](https://github.com/bittencourtthulio/expxdev).
+Detalhes do ecossistema inteiro no [README do expxdev](https://github.com/AxisGov/expxdev).
 
 ---
 
@@ -75,9 +75,9 @@ Numa software house esse é o desperdício mais caro que existe — mais caro qu
 O prodx é o portão que falta.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo.svg">
-  <img alt="Fluxo do prodx: o chamado entra pela esquerda e passa pela triagem. Sem gatilho disparado, segue pelo caminho curto direto ao veredito. Com gatilho, entra na avaliacao completa, que percorre entendimento do pedido, verificacao de existencia e avaliacao. Ambos os caminhos chegam aos quatro vereditos: ja existe e nao fazer encerram sem trabalho; fazer outra coisa e fazer geram briefing. Todo veredito passa pelo portao da assinatura humana, e so depois dele o briefing sai para o runx e para o sprintx." src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/assets/prodx-fluxo.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AxisGov/prodx/main/assets/prodx-fluxo-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AxisGov/prodx/main/assets/prodx-fluxo.svg">
+  <img alt="Fluxo do prodx: o chamado entra pela esquerda e passa pela triagem. Sem gatilho disparado, segue pelo caminho curto direto ao veredito. Com gatilho, entra na avaliacao completa, que percorre entendimento do pedido, verificacao de existencia e avaliacao. Ambos os caminhos chegam aos quatro vereditos: ja existe e nao fazer encerram sem trabalho; fazer outra coisa e fazer geram briefing. Todo veredito passa pelo portao da assinatura humana, e so depois dele o briefing sai para o runx e para o sprintx." src="https://raw.githubusercontent.com/AxisGov/prodx/main/assets/prodx-fluxo.svg" width="100%">
 </picture>
 
 ## A realidade: o pedido vai do suporte direto ao dev
@@ -166,10 +166,12 @@ O prodx **não tem hook e não tem motor**: ele não executa nada, só lê o rep
 
 ### Pelo CLI do método (recomendado)
 
-O [`expxdev`](https://github.com/bittencourtthulio/expxdev) instala o prodx por completo — a skill, os seis comandos nas duas pastas e o `AGENTS.md`:
+O [`expxdev`](https://github.com/AxisGov/expxdev) instala o prodx por completo — a skill, os seis comandos nas duas pastas e o `AGENTS.md`:
+
+Com o CLI `expx` instalado pela [release do expxdev](https://github.com/AxisGov/expxdev#instalar-a-partir-da-release):
 
 ```bash
-npx expxdev init --skills runx,prodx
+expx init --skills runx,prodx
 ```
 
 O CLI trata o prodx como **camada**: sozinho ele não gera trabalho nenhum, então precisa vir acompanhado de `sprintx` ou `runx`. Ele avisa se você pedir só a camada, mas nunca impede.
