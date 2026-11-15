@@ -171,7 +171,7 @@ O [`expxdev`](https://github.com/AxisGov/expxdev) instala o prodx por completo �
 Com o CLI `expx` instalado pela [release do expxdev](https://github.com/AxisGov/expxdev#instalar-a-partir-da-release):
 
 ```bash
-expx init --skills runx,prodx
+expx init --skills runx,prodx --harness claude,opencode
 ```
 
 O CLI trata o prodx como **camada**: sozinho ele não gera trabalho nenhum, então precisa vir acompanhado de `sprintx` ou `runx`. Ele avisa se você pedir só a camada, mas nunca impede.
